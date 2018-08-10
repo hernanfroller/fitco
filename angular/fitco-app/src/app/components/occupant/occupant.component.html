@@ -1,0 +1,38 @@
+<br>
+<mat-card>
+    <mat-card-title>
+      Nuevo Ocupante
+    </mat-card-title>
+    <mat-card-content>
+        <form class="basic-form">
+            <mat-form-field class="full-width">
+                <input matInput [(ngModel)]="occupant.dni" name="dni" placeholder="DNI">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <input matInput [(ngModel)]="occupant.name" name="name" placeholder="Nombre">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-icon-button color="primary" (click)="onSave()"><mat-icon>add_circle</mat-icon> Registrar</button>
+    </mat-card-actions>
+</mat-card>
+<br>
+<mat-card>
+    <mat-card-title>
+        Listado de Ocupantes
+    </mat-card-title>
+    <mat-card-content>
+        <mat-selection-list #list [(ngModel)]="selectedOccupants">
+            <mat-list-option role="listitem" *ngFor="let occupant of occupants | async" [value]="occupant">
+                {{occupant.data.name}}
+            </mat-list-option>
+        </mat-selection-list>
+        <p>
+            Ocupantes Seleccionados {{selectedOccupants.length}}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-icon-button color="primary" (click)="onDelete()"><mat-icon>delete</mat-icon> Eliminar</button>
+    </mat-card-actions>
+</mat-card>
