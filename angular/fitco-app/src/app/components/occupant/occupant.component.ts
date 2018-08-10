@@ -36,6 +36,7 @@ export class OccupantComponent implements OnInit {
       alert(AppSettings.VALIDATION_MESSAGE.replace("##", "DNI y Nombre"));
     } else {
       this.db.collection('occupants').add(Object.assign({}, this.occupant));
+      this.occupant = new Occupant();
     }
   }
 

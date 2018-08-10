@@ -1,0 +1,98 @@
+.ios, .md, .wp {
+    page-home {
+
+        ion-content {
+
+            .week {
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.2em;
+                color: #c0c0c0;
+            }
+
+            ion-card {
+                position: relative;
+                text-align: center;
+            }
+
+            .card-title {
+                position: absolute;
+                top: 36%;
+                font-family: "Baby Superhero" !important;
+                font-weight: 700;
+                font-size: 3.0em;
+                width: 100%;
+                font-weight: bold;
+                color: #fff;
+
+                //text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+            }
+
+            .card-subtitle {
+                //font-family: "Baby Superhero" !important;
+                //font-weight: 700;
+                font-size: 1.0em;
+                position: absolute;
+                top: 58%;
+                width: 100%;
+                color: #fff;
+                font-weight: bold;
+
+                //text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+            }
+
+            .card-subtitle span {
+                font-family: "roboto";
+                font-size: 1.5em;
+            }
+
+            .buttons {
+                position: absolute;
+                bottom: 5%;
+                width: 100%;
+            }
+
+            /*button.left {
+                left: 20%;
+            }
+
+            button.rigth {
+                right: 50%;
+            }*/
+
+        }
+
+        /*ion-header {
+            ion-navbar {
+                height: 200px;
+                align-items: flex-end !important;
+                padding-bottom: 12px !important;
+                ion-title {
+                    height: 32px;
+                }
+
+                div.toolbar-background {
+                    background-image: url('../../assets/imgs/header-bg.png') !important;
+                    background-repeat: no-repeat;
+                    background-size: cover !important;
+                    background-position: center !important;
+                    text-align: center;
+                }
+            }
+        }*/
+
+        /*button.item.item-block {
+            padding: 20px;
+            margin-bottom: 10px;
+            -webkit-box-shadow: 0px 4px 15px -4px rgba(0,0,0,0.20);
+            -moz-box-shadow: 0px 4px 15px -4px rgba(0,0,0,0.20);
+            box-shadow: 0px 1px 15px -4px rgba(0,0,0,0.20);
+            border: 0px solid #000;
+
+            .item-inner {
+                border: 0px;
+            }
+        }*/
+
+    }
+}
